@@ -11,23 +11,18 @@ gem 'rails', '~> 5.1.2'
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
-# Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
 # Use jwt to manage JWT tokens
 gem 'jwt'
 # Use linearly to implement specific workflow in app
 gem 'linearly', '~> 0.1.0'
 # Use graphql to manage gql queries
 gem 'graphql'
-
-gem "graphiql-rails"
-
+# Use pry as a alternative to rails console
 gem "pry"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-
   gem 'pry-rails'
 end
 
