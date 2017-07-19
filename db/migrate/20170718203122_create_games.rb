@@ -6,7 +6,7 @@ class CreateGames < ActiveRecord::Migration[5.1]
       t.text :description
       t.money :original_price
       t.money :sale_price
-      t.float :sale_percentage, precision: 2
+      t.float :sale_percentage
       t.date :release_date
       t.integer :time # in hours
 
