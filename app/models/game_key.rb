@@ -2,6 +2,7 @@ class GameKey < ApplicationRecord
   # relations
   belongs_to :game
   belongs_to :user, optional: true
+  belongs_to :transaction, optional: true
 
   # validation
   validates :key, uniqueness: { scope: :game }

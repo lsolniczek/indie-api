@@ -9,4 +9,8 @@ Types::QueryType = GraphQL::ObjectType.define do
   field :users, !types[Types::UserType] do
     resolve -> (obj, args, ctx) { User.all }
   end
+
+  field :games, !types[Types::GameType] do
+    resolve -> (obj, args, ctx) { Game.all }
+  end
 end
